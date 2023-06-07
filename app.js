@@ -1,4 +1,4 @@
-let process = require("process");
+const process = require("process");
 
 let appInsights = require("applicationinsights");
 appInsights.setup(process.env.APPLICATIONINSIGHTS_CONNECTION_STRING)
@@ -23,7 +23,7 @@ var logger = require('morgan');
 
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
-const process = require("process");
+
 
 var app = express();
 
